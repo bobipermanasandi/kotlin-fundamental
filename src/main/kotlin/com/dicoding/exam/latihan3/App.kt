@@ -38,7 +38,6 @@ fun <T> checkType(args: T): String {
         is List<*> -> "Yes! it's List"
         is Map<*, *> -> "Yes! it's Map"
         else -> "Oh No! None of the types are suitable"
-
     }
 }
 

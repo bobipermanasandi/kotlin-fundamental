@@ -28,7 +28,7 @@ package com.dicoding.exam.latihanopsional1
  */
 
 fun sumOfBigThree(vararg numbers: Int): Int {
-    if(numbers.isEmpty()) return 0
+    if (numbers.isEmpty()) return 0
     val sortNumber = numbers.sortedDescending()
     return sortNumber.take(3).sum()
 }

@@ -31,21 +31,21 @@ package com.dicoding.exam.latihanopsional3
 
 fun manipulateString(str: String, int: Int): String {
     var number = ""
-    var nonNumber = ""
+    var char = ""
 
     str.forEach {
-        if(it.isDigit()) {
+        if (it.isDigit()) {
             number += it
-        }else {
-            nonNumber += it
+        } else {
+            char += it
         }
     }
 
     val nonString = number.toIntOrNull() ?: 0
 
     return if (nonString != 0) {
-         nonNumber + (nonString * int)
-    }else {
+        char + (nonString * int)
+    } else {
         str + int
     }
 }

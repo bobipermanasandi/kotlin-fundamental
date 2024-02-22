@@ -37,4 +37,4 @@ fun main() {
  * Pastikan tidak mengubah nama 'concatString'
  */
 
-val concatString: (String,String) -> String = String::plus
+val concatString: (String, String) -> String = String::plus
